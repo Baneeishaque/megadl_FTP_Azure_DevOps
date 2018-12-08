@@ -1,0 +1,79 @@
+To verify the origin of megatools, run: 
+
+  gpg --verify CHECKSUMS.TXT
+  gpg -d CHECKSUMS.TXT | sha256sum -c
+
+You'll need to acquire and verify the origin of my public key in some
+trustworthy way:
+
+  Ondrej Jirman <megous@megous.com>
+
+Key fingerprint: 9AB138B20691621CD4CF92026E6426C677CFEFF1
+
+Notice that you can't trust the unsigned part of this message, and when
+you'll feel the need to verify the files, it's already too late to put
+trust in the validity of above mentioned information. So get the key
+early and build trust gradually with the consistency of megatools
+releases.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+3aedc5accd1d7516d302d72f4dd75b9a9c2f7dccda6259da6fd64c2669941fb0  DEPS.TXT
+877583e8fa9d673fb421976971bd39c2e5ad9045cd0c25bc4a8631bb7becc058  libcharset-1.dll
+038d8cf5381de77cd934676e3292d1ff675d24a0c6700a8e46b19098b5828747  libcrypto-1_1-x64.dll
+025be347bacd7a36622190b25999821e77f17ce5152cb4316ad86be941991b27  libcurl-4.dll
+b46fc4daf53d79f3f7d7685153abe34f77c15ea8a2a0036d99514ef00c687159  libffi-6.dll
+f69a0fcd96d79ea1f3f73a1e99281a9b6389141bbc1478857662177c8b7498a7  libgcc_s_seh-1.dll
+d3015c19c7d4f8b3be94d7410466def80af43fd6170832d3ebe9a8ed6a993d7b  libgio-2.0-0.dll
+4cdbc42bd0cf3cf0722e4cfb23370fb499066d36af796d254686bc679429ee68  libglib-2.0-0.dll
+919de76543e34c3b271ba2ccc16bbd16eaded4ebcaa8c1bc9fe93d59c017af2d  libgmodule-2.0-0.dll
+64003a41410b8cd43f209e677d9f148f8eef36ccce0e7d35494441507ac0423b  libgobject-2.0-0.dll
+85dbdb24decd20bb1300386de06560b103c3c568b049fef8d2877b5d9921f865  libiconv-2.dll
+1a0724db18c371682ab4cca854b5921fcc2c49ab5f745a417110fc4f54dbb795  libintl-8.dll
+034474a3c07a510639abbde9ced9ddc57c488feb046d5dce8dbc0e70c1621ff4  libssl-1_1-x64.dll
+f9adc91c511dd1c4b5c1231763681c6a2269bc6333f3118f8bbd6d3b3c72e8ab  libwinpthread-1.dll
+f32ed5870db3bdb2e96d5edc8fe3820d0def0c8c75fc6dee49a0dc6be0765ff1  LICENSE.TXT
+c7bf9956a92137fa2f43207653ab1f134b5060aa00e657e335267f71c0ec3bad  megacmd.bat
+f0128ccf600d6803b3e7839db2c4b60d52991fda6288a2980290846f89a41256  megacopy.exe
+e75adc362c57f32536f917b4bbfc60ecba2afc4023a6e28e63b24ee44c6b8e2f  megadf.exe
+d2b59c85e03f67f9213ed28507a997741968ddd7aa62de67b506ddbec170bf68  megadl.exe
+dd82cf2fdbebdfff8e55ce571280b236a6b951d56ec9470fdbeefe2518c56bca  megaget.exe
+f6cdddf8dd25cd1076a8406b9cfc15a76ed9abebb6d09f84c1548d62e6ff9c7b  mega.ini
+c121de81ab8775217f118975038c8169c07aab1d514c09cf440c5394d3e4d09f  megals.exe
+a904155586514adaf1c3c88b57e32f679533053a658de9803f72cdd1a0d0ab7b  megamkdir.exe
+f4f4b6dd71db0ffd38535cbabd5842c7dc3948b6d663e3d5abc7f4d35630f932  megaput.exe
+1bedb1d87b40c3af75d602063040b313931cf05b27a400a8a9b82654e0813fb9  megareg.exe
+158fd3c24438261aef20f54bb3424a90115b5ede3e6cc01a41980e75a8a2d6c9  megarm.exe
+2172dcce4bc46cefc5a2d542cc2e5fbc74ae5e8286b721e231351f6256c0763c  NEWS.TXT
+9a9e1616773a08782faf966bff2aaebb44d818aaa8ab24de39b22b44925be307  README.TXT
+d7028631504526e5a5e807b8a8298b7c9a0055c50615cfb3d8fa8b2c56e1fb7f  TODO.TXT
+ca270ee4774c455df0111a0919843c31dc810c369e20e1d31b6e22bb4c8faefd  zlib1.dll
+ffed61d00cc30589bc7e8ca731fa0a135250cbaad1e1e6a4b890b7111717869f  man/docbook-xsl.css
+86113a3079ebec91b0ff60a70d64a1f9a79d7bf17fad10c14fafff0b52541098  man/megacopy.html
+252c34c55fc75091fc5903127bf673c89abe1802940e46cee11f710d086ea66c  man/megadf.html
+b2fdf4cb05e83d6f3e5def0d184bb291f4d52c24ce7c6be1a62ade87ccfb445f  man/megadl.html
+95fad5ef96c66ed9db500ac2b95e9cf767d98a7490414692cf2bce948ad95b10  man/megaget.html
+4f204b31ac8d7209ba2f1ac15063ba4f12c508bb5a5a3d732b04079e28da38af  man/megals.html
+7a71c1e8ad90486b8ee707c83e454a9f74f69d069eb449c8234829c953c7e9b7  man/megamkdir.html
+8bb8686ce82c4f940150efe35cd3be7a7a10c079a55bd27438a41b56ead1865d  man/megaput.html
+5835b8e265bbee3d7cc48cbce2a65955a3ebec3f1a91140f143c95c9d3751716  man/megarc.html
+b2fd312895b2e2517ef2c2c80ac067c3e51ee85e3736b6374494c359bcc0b7b9  man/megareg.html
+08a33f209f3fa4b950ac90a6f8e1c8ce38b79cf918ca1d777817b4ce38349157  man/megarm.html
+36977680f24b54f482d6cc8f1ce00b8f7b9ebd8fa911b7c38078dc83804ed10f  man/megatools.html
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCAAdFiEEmrE4sgaRYhzUz5ICbmQmxnfP7/EFAltgTccACgkQbmQmxnfP
+7/FHew//dqX4C+ld1O8g/+kusie+BfGKtNS4Ua38w+PkAeycKxPeuAk2xu7yXIoB
+CV/scpfgL8ihK5G47fgEAvKsiBG8yKgUmFgVXMNLQaLa58+ipxJ5+53KLDVE3oEU
+bYv4CwqXpWv3r5SiROhuCMuGfeTqhSU01UwcjjxUDbCzEEWBlqRD/Ef8i9lZx5aq
+AOrpOldQQSDLDQ5/t42sZlZfkIqnNEHymKoeb3sYG4r14N6emTIITtaR1/TjNdor
+cdspkyt3l/63rn1DUKNUFWZgHvObBnScRZtqNsi/LB8fdvk16VmRSkuMsmBvlJcu
+K3V8XdgtDZejqzgMQuXtS07APNQia4woJDGxzEGTmX5/CQdp9LwbDPwJCJLWwElj
+GDDPhTznuvWLypAnymcjq1XguIPb3GcvrqaSTAcvKF2bMfqS8qt2DpLPo8zYn2Oj
+ThoTKbXMn6lut5xNYzzksk/ChmxizWZaQ2oWgxtshwFRZiz2Kpa2DgsPf4BnO5LY
+WJpwj9aVkMeOgKI3AIpF8xbnsUeK2OG7pZ8kMGe+jqhoTxvaQ5gd/TW1fzGdWxgB
+wwtVVzxHilYtziOKgovN2pZOe/kLgQm4DBDcZAPM81wLxqLUmKqYjAykAiNYM/i3
+3WLXFajG7la029fCxmo4XKZZOGESjXjFnZe2fwAm0NCqmZ/x7K4=
+=ezTb
+-----END PGP SIGNATURE-----

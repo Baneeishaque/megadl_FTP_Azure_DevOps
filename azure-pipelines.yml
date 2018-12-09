@@ -8,6 +8,6 @@ pool:
 
 steps:
 - script: |
-    megatools-1.10.2-win64\megadl.exe 'https://mega.nz/#!m0AkyAAQ!dTZhq9IKzRrL5Kl5zCQkAk2X3iCuf2uEbSfdZ-OyLnU'
+    megatools-1.10.2-win64\megadl.exe https://mega.nz/#!m0AkyAAQ!dTZhq9IKzRrL5Kl5zCQkAk2X3iCuf2uEbSfdZ-OyLnU
     DIR
   displayName: 'Run a multi-line script'

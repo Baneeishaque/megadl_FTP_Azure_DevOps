@@ -8,6 +8,6 @@ pool:
 
 steps:
 - script: |
-    megatools-1.10.2-win64\megadl.exe --path megadl_ftp_vsts_repository https://mega.nz/#!m0AkyAAQ!dTZhq9IKzRrL5Kl5zCQkAk2X3iCuf2uEbSfdZ-OyLnU
+    megatools-1.10.2-win64\megadl.exe --path megadl_ftp_vsts_repository https://mega.nz/#F!FLQUyb5J!_EXxEI7zjaM1cUirMQFnAQ
     DIR megadl_ftp_vsts_repository
-  displayName: 'Run a multi-line script'
+  displayName: 'megatools dl'

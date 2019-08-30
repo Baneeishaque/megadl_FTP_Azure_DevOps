@@ -9,7 +9,7 @@ pool:
 steps:
 - script: |
     mkdir megadl_ftp_vsts_repository
-    megatools-1.10.2-win64\megadl.exe --path megadl_ftp_vsts_repository 'https://mega.nz/#F!FLQUyb5J!_EXxEI7zjaM1cUirMQFnAQ'
+    megatools-1.10.2-win64\megadl.exe --path megadl_ftp_vsts_repository 'https://mega.nz/#F!aTxAmKaS!VnaKFs0a8uQNDV6owLq3TA'
     DIR megadl_ftp_vsts_repository
   displayName: 'megatools dl'
   timeoutInMinutes: 0

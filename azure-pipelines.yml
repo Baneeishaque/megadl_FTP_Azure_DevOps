@@ -1,7 +1,4 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
+# megadl pipeline
 
 pool:
   vmImage: 'vs2017-win2016'
@@ -13,3 +10,14 @@ steps:
     DIR megadl_ftp_vsts_repository
   displayName: 'megatools dl'
   timeoutInMinutes: 0
+
+# Upload Folder
+- task: FtpUpload@1
+  displayName: 'FTP Folder'
+  inputs:
+    credentialsOption: inputs
+    serverUrl: 'ftp://192.254.233.216'
+    username: 'root@alaneesgroup.com'
+    password: 9895204814
+    rootDirectory: 'megadl_ftp_vsts_repository'
+    remoteDirectory: '/azure_devops/megadl'
